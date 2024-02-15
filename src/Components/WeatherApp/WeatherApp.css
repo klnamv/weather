@@ -1,0 +1,51 @@
+.container {
+    width: 25%;
+    height: 700px;
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 20px;
+    background: #0D324D;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 30px;
+}
+
+.top-bar input {
+    display: flex;
+    width: 250px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 20px;
+    color: #020202;
+    font-size: 16px;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.weather-image {
+    margin-top: 29px;
+    display: flex;
+    justify-content: center;
+}
+
+.weather-temp{
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
