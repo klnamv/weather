@@ -53,8 +53,6 @@ const WeatherApp = () => {
         } else {
             setWicon(clear_icon)
         }
-
-
     }
 
     return (
@@ -65,24 +63,36 @@ const WeatherApp = () => {
                     <img src={search_icon} alt="" />
                 </div>
             </div>
-            <div className='weather-image'>
-                <img src={wicon} alt='Weather Icon' />
-            </div>
-            <div className='weather-temp'>24</div>
-            <div className='weather-location'>London</div>
-            <div className='data-container'>
-                <div className='element'>
-                    <img src={humidity_icon} alt='' className='icons'/>
+            <div className='weather-widget'>
+                <div className='weather-main'>
+                    <div className='weather-image'>
+                        <img src={wicon} alt='Weather Icon' />
+                    </div>
+                    <div className='weather-temp'>24</div>
+                    <div className='weather-location'>London</div>
+                </div>
+                <div className='weather-detail humidity'>
                     <div className='data'>
                         <div className='humidity-percent'>64</div>
                         <div className='text'>Humidity</div>
                     </div>
                 </div>
-                <div className='element'>
-                    <img src={wind_icon} alt='' className='icons'/>
+                <div className='weather-detail wind-speed'>
                     <div className='data'>
                         <div className='wind-rate'>18 m/h</div>
                         <div className='text'>Wind Speed</div>
+                    </div>
+                </div>
+                <div className='weather-detail feels-like'>
+                    <div className='data'>
+                        <div className='wind-rate'>18 m/h</div>
+                        <div className='text'>Feels like</div>
+                    </div>
+                </div>
+                <div className='weather-map'>
+                    <div className='data'>
+                        <div className='wind-rate'>18 m/h</div>
+                        <div className='text'>map</div>
                     </div>
                 </div>
             </div>
