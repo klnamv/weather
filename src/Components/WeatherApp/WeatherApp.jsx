@@ -28,11 +28,13 @@ const WeatherApp = () => {
         const wind = document.getElementsByClassName("wind-rate");
         const temprature = document.getElementsByClassName("weather-temp");
         const location = document.getElementsByClassName("weather-location");
+        const feels = document.getElementsByClassName('temp')
 
         humidity[0].innerHTML = data.main.humidity + " %";
         wind[0].innerHTML = Math.floor(data.wind.speed) + " km/h";
         temprature[0].innerHTML = Math.floor(data.main.temp) + " °C";
         location[0].innerHTML = data.name;
+        feels[0].innerHTML = Math.floor(data.main.feels_like) + " °C";
         
         if(data.weather[0].icon === "01d" || data.weather[0].icon === "01n"){
             setWicon(clear_icon);
@@ -123,7 +125,7 @@ const WeatherApp = () => {
                 </div>
                 <div className='feels-like'>
                     <div className='data'>
-                        <div className='wind-rate'>18 m/h</div>
+                        <div className='temp'>18</div>
                         <div className='text'>Feels like</div>
                     </div>
                 </div>
