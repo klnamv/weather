@@ -1,5 +1,5 @@
 .container {
-    width: 50%;
+    width: 60%;
     border-radius: 20px;
     background-color: #6151C3;
 }
@@ -45,12 +45,18 @@
 .widgets {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
     grid-auto-rows: minmax(100px, auto);
-    padding: 10px;
+    padding: 20px;
+    justify-content: center;
+
 }
 
 .main-widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-column: 1 / 2;
     grid-row: 1 / 4;
     background-color: white;
@@ -61,14 +67,37 @@
     width: 200px;
 }
 
+.weather-temp {
+    font-size: 64px;
+    color: #6151C3; 
+}
+
+.weather-location {
+    color: #333;
+    font-size: 36px; 
+    margin-top: -10px;
+}
+
 .humidity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-column: 2 / 3;
     grid-row: 1;
     background-color: white;
     border-radius: 10px;
 }
 
+.humidity-percent {
+
+}
+
 .wind-speed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-column: 3 / 4;
     grid-row: 1;
     background-color: white;
@@ -76,6 +105,10 @@
 }
 
 .feels-like {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-column: 2 / 4;
     grid-row: 2;
     background-color: white;
@@ -83,6 +116,10 @@
 }
 
 .map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-column: 2 / 4;
     grid-row: 3;
     background-color: white;
