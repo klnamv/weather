@@ -5,10 +5,8 @@ import search_icon from '../Assets/search.png';
 import clear_icon from '../Assets/clear.png';
 import cloud_icon from '../Assets/cloud.png';
 import drizzle_icon from '../Assets/drizzle.png';
-import humidity_icon from '../Assets/humidity.png';
 import rain_icon from '../Assets/rain.png';
 import snow_icon from '../Assets/snow.png';
-import wind_icon from '../Assets/wind.png';
 
 const WeatherApp = () => {
 
@@ -56,42 +54,81 @@ const WeatherApp = () => {
     }
 
     return (
+        // <div className='container'>
+        //     <div className='top-bar'>
+        //         <input type='text' className='cityInput' placeholder='Search'/>
+        //         <div className='search-icon' onClick={() => {search()}} >
+        //             <img src={search_icon} alt="" />
+        //         </div>
+        //     </div>
+        //     <div className='weather-widget'>
+        //         <div className='weather-main'>
+        //             <div className='weather-image'>
+        //                 <img src={wicon} alt='Weather Icon' />
+        //             </div>
+        //             <div className='weather-temp'>24</div>
+        //             <div className='weather-location'>London</div>
+        //         </div>
+                // <div className='weather-detail humidity'>
+                //     <div className='data'>
+                //         <div className='humidity-percent'>64</div>
+                //         <div className='text'>Humidity</div>
+                //     </div>
+                // </div>
+                // <div className='weather-detail wind-speed'>
+                //     <div className='data'>
+                //         <div className='wind-rate'>18 m/h</div>
+                //         <div className='text'>Wind Speed</div>
+                //     </div>
+                // </div>
+                // <div className='weather-detail feels-like'>
+                //     <div className='data'>
+                //         <div className='wind-rate'>18 m/h</div>
+                //         <div className='text'>Feels like</div>
+                //     </div>
+                // </div>
+                // <div className='weather-map'>
+                //     <div className='data'>
+                //         <div className='text'>map</div>
+                //     </div>
+                // </div>
+        //     </div>
+        // </div>
         <div className='container'>
-            <div className='top-bar'>
+            <div className='search-bar'>
                 <input type='text' className='cityInput' placeholder='Search'/>
                 <div className='search-icon' onClick={() => {search()}} >
                     <img src={search_icon} alt="" />
-                </div>
+                </div>    
             </div>
-            <div className='weather-widget'>
-                <div className='weather-main'>
-                    <div className='weather-image'>
-                        <img src={wicon} alt='Weather Icon' />
-                    </div>
-                    <div className='weather-temp'>24</div>
-                    <div className='weather-location'>London</div>
-                </div>
-                <div className='weather-detail humidity'>
+            <div className='widgets'>
+                <div className='main-widget'>
+                     <div className='weather-image'>
+                         <img src={wicon} alt='Weather Icon' />
+                     </div>
+                     <div className='weather-temp'>24</div>
+                     <div className='weather-location'>London</div>
+                 </div>
+                 <div className='humidity'>
                     <div className='data'>
                         <div className='humidity-percent'>64</div>
                         <div className='text'>Humidity</div>
                     </div>
                 </div>
-                <div className='weather-detail wind-speed'>
+                <div className='wind-speed'>
                     <div className='data'>
                         <div className='wind-rate'>18 m/h</div>
                         <div className='text'>Wind Speed</div>
                     </div>
                 </div>
-                <div className='weather-detail feels-like'>
+                <div className='feels-like'>
                     <div className='data'>
                         <div className='wind-rate'>18 m/h</div>
                         <div className='text'>Feels like</div>
                     </div>
                 </div>
-                <div className='weather-map'>
+                <div className='map'>
                     <div className='data'>
-                        <div className='wind-rate'>18 m/h</div>
                         <div className='text'>map</div>
                     </div>
                 </div>
