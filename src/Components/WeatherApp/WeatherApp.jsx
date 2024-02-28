@@ -113,20 +113,20 @@ const WeatherApp = () => {
                  </div>
                  <div className='humidity'>
                     <div className='data'>
-                        <div className='humidity-percent'>64</div>
                         <div className='text'>Humidity</div>
+                        <div className='humidity-percent'>64</div>
                     </div>
                 </div>
                 <div className='wind-speed'>
                     <div className='data'>
-                        <div className='wind-rate'>18 m/h</div>
                         <div className='text'>Wind Speed</div>
+                        <div className='wind-rate'>18 m/h</div>
                     </div>
                 </div>
                 <div className='feels-like'>
                     <div className='data'>
-                        <div className='temp'>18</div>
                         <div className='text'>Feels like</div>
+                        <div className='temp'>18</div> 
                     </div>
                 </div>
                 <div className='map'>
