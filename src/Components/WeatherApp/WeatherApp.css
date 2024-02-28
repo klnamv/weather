@@ -1,5 +1,5 @@
 .container {
-    width: 60%;
+    width: 50%;
     border-radius: 20px;
     background-color: #6151C3;
 }
@@ -44,9 +44,9 @@
 
 .widgets {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 1fr 1fr;
     gap: 20px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(150px, auto);
     padding: 20px;
     justify-content: center;
 
@@ -69,13 +69,15 @@
 
 .weather-temp {
     font-size: 64px;
-    color: #6151C3; 
+    font-weight: bold;
+    color: #6151C3;
+    margin-top: 30px;
 }
 
 .weather-location {
     color: #333;
     font-size: 36px; 
-    margin-top: -10px;
+    margin-top: 10px;
 }
 
 .humidity {
@@ -97,7 +99,8 @@
 
 .data .text {
     color: #333;
-    font-size: 16px; 
+    font-size: 18px; 
+    text-align: left;
 }
 
 .wind-speed {
@@ -122,7 +125,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-column: 2 / 4;
+    grid-column: 2 / 3;
     grid-row: 2;
     background-color: white;
     border-radius: 10px;
@@ -135,12 +138,57 @@
 }
 
 .map {
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 2;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.map .data .text {
+    color: #333;
+    font-size: 18px; 
+    text-align: left;
+}
+
+.temp-map {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sunrise {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-column: 2 / 4;
+    grid-column: 2 / 3;
     grid-row: 3;
     background-color: white;
     border-radius: 10px;
+}
+
+.time-sunrise {
+    font-size: 32px;
+    font-weight: bold;
+    color: #6151C3;
+}
+
+.sunset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3 / 4;
+    grid-row: 3;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.time-sunset {
+    font-size: 32px;
+    font-weight: bold;
+    color: #6151C3;
 }
