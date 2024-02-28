@@ -6,7 +6,13 @@ function App() {
   return (
     <div>
       <WeatherApp />
+      <footer>
+        Made with love by
+        <a href='https://github.com/klnamv'> @klnamv </a>
+        🤍
+      </footer>
     </div>
+
   );
 }
 

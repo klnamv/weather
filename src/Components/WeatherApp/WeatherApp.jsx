@@ -13,6 +13,7 @@ const WeatherApp = () => {
 
     let apiKey = '2e06dc85affd66bd7948d8d171200443';
 
+    const [searchInput, setSearchInput] = useState("");
     const [wicon, setWicon] = useState(clear_icon);
     const [mapUrl, setMapUrl] = useState('');
 
@@ -43,6 +44,9 @@ const WeatherApp = () => {
     }
 
     const search = async () => {
+        if (searchInput === ""){
+            return;
+        }
         const element = document.getElementsByClassName("cityInput");
         const input = element[0].value;
         if (input === ""){
@@ -94,12 +98,14 @@ const WeatherApp = () => {
         } else {
             setWicon(clear_icon)
         }
+
+        setSearchInput("");
     }
 
     return (
         <div className='container'>
             <div className='search-bar'>
-                <input type='text' className='cityInput' placeholder='Search'/>
+                <input type='text' className='cityInput' placeholder='Search' value={searchInput} onChange={(e) => setSearchInput(e.target.value)} />
                 <div className='search-icon' onClick={() => {search()}} >
                     <img src={search_icon} alt="" />
                 </div>    
