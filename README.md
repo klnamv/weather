@@ -16,7 +16,7 @@
 # How Can It Be Improved?
 The project can be improved by adding animation and making the site responsive for all devices (phone).
 
-# Bugs 🐛
+# Known problems 🐛
 - Website is not adapted for phones
 
 # Running the Project 🚦
