@@ -7,9 +7,7 @@ function App() {
     <div>
       <WeatherApp />
       <footer>
-        Made with love by
-        <a href='https://github.com/klnamv'> @klnamv </a>
-        🤍
+        <a href='https://github.com/klnamv'> Made with love by @klnamv 🤍</a>
       </footer>
     </div>
 
