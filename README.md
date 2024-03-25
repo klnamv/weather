@@ -10,7 +10,7 @@
 # Technologies 💻
 - `React`
 - `OpenWeatherMap API`
-- `Leaflet` (for future map integration)
+- `Leaflet` (for feature map integration)
 - `CSS`
 
 # How Can It Be Improved?
